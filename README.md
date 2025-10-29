@@ -1,8 +1,13 @@
 # SQL Exercises
-This repository contains my SQL practice files with examples for:
-- SELECT, WHERE, ORDER BY, and logical operators  
-- LIKE / ILIKE, BETWEEN, IN, and NOT operators  
-- LIMIT and OFFSET clauses  
-- NULL handling and arithmetic operations  
-
+✅ SELECT statements
+✅ Arithmetic & Concatenation Operators
+✅ WHERE, BETWEEN, and Logical Operators
+✅ LIKE & ILIKE Operators
+✅ IN and NOT IN Operators
+✅ ORDER BY Clause
+✅ LIMIT & OFFSET
+✅ NULL and IS NULL
 Each `.sql` file includes English explanations and teacher-style notes.
+
+✨ Author
+👩‍💻 blanchayat
