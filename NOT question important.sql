@@ -1,7 +1,5 @@
--- Question:
--- Find employees whose salary is NOT BETWEEN 4000 and 7000
--- and whose job_id is DIFFERENT from 16.
-
+-- Question
+-- Find employees whose salary is NOT BETWEEN 4000 and 7000 and whose job_id is DIFFERENT from 16.
 
 -- ❌ Wrong Attempt #1 — Error: two WHERE keywords
 SELECT * FROM employees 
