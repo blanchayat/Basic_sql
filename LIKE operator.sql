@@ -1,5 +1,3 @@
---   How to use the LIKE operator for pattern matching in SQL queries.
-
 --   The LIKE operator is used to search for a specified pattern in a column.
 --     %  - represents zero or more characters
 --     _  - represents a single character
@@ -42,3 +40,4 @@ WHERE title LIKE '%A%V%' OR title LIKE '%a%v%';
 --   - The LIKE operator is essential for text-based searches and pattern recognition.
 --   - % and _ wildcards help in building flexible filtering conditions.
 --   - Case sensitivity may depend on the database settings (PostgreSQL is case-sensitive by default).
+
