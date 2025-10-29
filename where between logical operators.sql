@@ -1,4 +1,5 @@
--- where statement, comparison operators 
+-- 📘 SQL Exercise: WHERE, BETWEEN, and Logical Operators
+--   Practice filtering data using WHERE, BETWEEN, and logical operators (AND, OR, NOT).
 
 select * from actor
 WHERE first_name = 'Penelope';
@@ -22,7 +23,7 @@ AND city_id = 5;
 select * from payment 
 where staff_id = 2
 OR amount > 5;
--- be carefully for OR
+-- ⚠️ Be careful with OR — it can widen your results if not used carefully.
 
 -- BETWEEN operators
 
@@ -39,3 +40,7 @@ select * from employees
 where hire_date BETWEEN '2017-01-01' AND '2017-12-31'
 order by hire_date;
 
+-- 💡 Lesson Learned:
+--   - Used comparison, logical, and range operators effectively.
+--   - Practiced filtering both numeric and date data.
+--   - Learned the importance of query readability and precision.
