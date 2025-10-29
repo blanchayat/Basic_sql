@@ -36,8 +36,29 @@ SELECT title FROM film
 WHERE title LIKE '%A%V%' OR title LIKE '%a%v%';
 -- It is case-sensitive in most SQL implementations (e.g., 'A%' is different from 'a%').
 
+--ILIKE Operator (PostgreSQL)
+-- PostgreSQL supports the ILIKE operator, which works exactly like LIKE,
+-- but performs **case-insensitive** pattern matching.
+--   - 'CAR%' will match 'Car', 'car', 'CARavan', 'caRpet', etc.
+--   - It's very useful when case variations are not important (for example, user input or names).
+
+--Case-insensitive pattern
+SELECT first_name, last_name
+FROM customer
+WHERE first_name ILIKE 'CAR%';
+
+-- Equivalent with LIKE (case-sensitive)
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE 'CAR%';
+-- This version would only match 'CAR...' (uppercase), not 'car' or 'Car'.
+
 -- 💡Lesson Learned:
+--  - Use ILIKE for case-insensitive pattern matching in PostgreSQL.
+--  - Both operators support the same wildcards:
+--       '%' for any sequence of characters
+--       '_' for a single character.
 --   - The LIKE operator is essential for text-based searches and pattern recognition.
---   - % and _ wildcards help in building flexible filtering conditions.
 --   - Case sensitivity may depend on the database settings (PostgreSQL is case-sensitive by default).
+
 
