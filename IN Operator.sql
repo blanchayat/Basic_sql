@@ -1,4 +1,3 @@
-
 --   Practice filtering data using the IN operator to match multiple values efficiently.
 --   The IN operator allows you to specify multiple possible values for a column in a WHERE clause.
 --   It’s cleaner and more efficient than using multiple OR conditions.
@@ -28,7 +27,8 @@ WHERE address_id = 10
 OR address_id = 20
 OR address_id = 30;
 
--- Lesson Learned:
+--💡 Lesson Learned:
 --   - The IN operator checks if a column’s value matches any value in a specified list.
 --   - It simplifies queries that would otherwise require multiple OR statements.
+
 --   - The list can include both text and numeric values.
